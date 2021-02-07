@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import './Tile.css'
 
@@ -9,7 +9,7 @@ const Tile = (props) => {
     return (
         <div className='Tile' style={dynamicColor}>
             { props.selected === true || props.matched === true ?
-    <svg /> : null };
+    <props.svg /> : null }
         </div>
     )
 }
