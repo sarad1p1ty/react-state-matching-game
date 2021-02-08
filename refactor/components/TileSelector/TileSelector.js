@@ -8,7 +8,7 @@ const TileSelector = (props) => {
     const [ref, hovered] = useHover();
     return <GameContext.Consumer>
         {
-            ([ numTiles, handleNumTileChange ]) => {
+            ({ numTiles, handleNumTileChange }) => {
                 const dropdown = (
                     <div className='tileSelectorContent' >
                         <div className='number' onClick={() => { handleNumTileChange(4) }}>4</div>
