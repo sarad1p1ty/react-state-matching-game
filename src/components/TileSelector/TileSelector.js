@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHover } from '../../hooks'
+import useHover  from '../../hooks'
 import './TileSelector.css'
 
 const TileSelector = (props) => {
@@ -17,9 +17,9 @@ const TileSelector = (props) => {
  return (
    <div className='tileSelector'>
      <div>Number of Tiles</div>
-     <div className='tileSelectorDropdown' ref={hovered ? dropdown : null}>
+     <div className='tileSelectorDropdown' ref={ref}>
        {props.numTiles}
-       {dropdown}
+       {hovered === true ? dropdown : null}
      </div>
    </div>
  )
